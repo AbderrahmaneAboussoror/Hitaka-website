@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitaka</title>
+    <!--Poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--Fichier css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/c123859339.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <section class="header header2 header3">
+            <!--barre de navigation-->
+            <nav>
+                <a href=""><img src="images/logo.png" alt=""></a>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-times" onclick="hide()"></i>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="cart.html">Carte</a></li>
+                        <li><a href="apropos.html">A Propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="show()"></i>
+            </nav>
+            <!--fin de barre de navigation-->
+
+        </div>
+
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53963
+            .13911239477!2d-9.271712225962538!3d32.293145072739826!2m3!1f0!2f0!3f0!3
+            m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac212049843597%3A0x6b618c47dfd85d40!
+            2sSafi!5e0!3m2!1sfr!2sma!4v1649555341132!5m2!1sfr!2sma" width="600" height="450" 
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-
+            when-downgrade"></iframe>
+        </section>
+
+        <section class="contactez-nous">
+            <div class="row2">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Jabal Tarik, Oued El Bacha</h5>
+                            <p>Safi, Morocco</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+212 632367208</h5>
+                            <p>Lundi au Samedi, 10AM au 6PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>adresse@gmail.com</h5>
+                            <p>Envoyer un email</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form action="">
+                        <input type="text" class="ct" placeholder="Entrez Votre Nom" required>
+                        <input type="email" class="ct" placeholder="Entrez Votre Email" required>
+                        <input type="text" class="ct" placeholder="Entrez Votre Sujet" required>
+                        <textarea rows="8" class="ct" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn1 orange-btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section class="footer">
+        <h4>Suivez Nous</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum <br> dolorem eum praesentium facilis at vel quisquam incidunt illo tempora, eos consequuntur</p>
+        <div class="icons">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div>
+        <section class="container-fluid footer_section">
+            <p>
+                &copy; <span id="displayYear">2022</span> All Rights Reserved 
+            </p>
+            </section>
+    </section>
+
+
+        <script>
+            var menu = document.getElementById("nav-links");
+            function show(){
+                menu.style.display = "block";
+                setTimeout(function(){
+                    menu.style.right = "0";
+                },0.1000);
+            }
+            function hide(){
+                menu.style.right = "-200px";
+                setTimeout(function(){
+                    menu.style.display = "none";
+                },1000);
+            }
+        </script>
+</body>
+</html>

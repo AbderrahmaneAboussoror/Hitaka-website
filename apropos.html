@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitaka</title>
+    <!--Poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--Fichier css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/c123859339.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header  header4">
+        <!--barre de navigation-->
+        <nav>
+            <a href=""><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hide()"></i>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cart.html">Carte</a></li>
+                    <li><a href="apropos.html">A Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="show()"></i>
+        </nav>
+        <!--fin de barre de navigation-->
+
+        <!--première page-->
+        <div class="text-box text-box2">
+            <h1>A Propos De Nous</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Dolorem consequatur, temporibus vel sint praesentium magni.</p>
+            <a href="contact.html" class="bouton">Contactez Nous</a>
+        </div>
+        <!--fin de la première page-->
+    </section>
+
+    <section class="text">
+        <h1>Nous somme la plus large restaurant de sushi!</h1>
+        <div class="col-para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, odio accusantium quam sequi temporibus voluptatem ipsa alias debitis, corrupti repudiandae sapiente voluptatibus illum voluptates porro necessitatibus nam quidem harum voluptas!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus omnis esse, est ab atque amet, sapiente eveniet explicabo, officia blanditiis ipsa nulla molestias? Distinctio est harum quia quis adipisci! Assumenda.</p>
+        </div>
+        <div class="col-para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vitae suscipit molestiae rerum ullam alias labore voluptas sunt fugit provident commodi reiciendis, odit ipsam qui! Delectus eius nihil officia quia labore, quo modi repellat nam impedit rerum ad optio sint voluptates ullam quos nesciunt! Tempora explicabo consequuntur enim aliquid dolorem omnis corporis aperiam minima tenetur optio quod, at eius. Facilis?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui aperiam modi dicta rem laudantium accusantium est? Itaque consequatur reiciendis voluptatibus fugit! Porro ipsum reiciendis in obcaecati illum beatae id officiis placeat nam? Laudantium voluptas ipsum nam repellendus non, quas expedita facilis ut mollitia numquam earum quae error, consequuntur unde sequi nemo vitae qui asperiores iure ratione, placeat voluptatum! Earum, explicabo.</p>
+        </div>
+        <div class="col-para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, minus maxime magnam in perferendis voluptatum vero eum quo fugiat? Facilis nam autem necessitatibus. Porro exercitationem sunt voluptatum quas reiciendis repudiandae, ab minima dolore temporibus magnam vitae voluptas, ratione laboriosam, aspernatur magni? Officia eius quo magni laudantium praesentium inventore sequi eos vel dolor. Laudantium ipsum, voluptatem, vitae velit fugit quibusdam hic cupiditate voluptas, odit corrupti provident nam quisquam temporibus quis? Sit suscipit unde quasi officia repellat provident? Sint perferendis voluptate nisi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit dolores optio ipsam molestiae laboriosam asperiores officia accusamus est dolorum cupiditate sunt suscipit voluptatum qui perspiciatis quos non ea impedit nihil ad, aliquam, atque, eos totam? Nobis esse molestiae doloribus error rerum. Vero, nostrum! Architecto ullam hic fugit tenetur voluptate magnam maiores, perferendis deserunt assumenda porro aliquid in optio ea voluptatibus sed. Possimus, necessitatibus, dolorem maxime qui, a sunt eveniet praesentium iusto nemo atque iure nisi reprehenderit officia esse dolores nam.</p>
+        </div>
+    </section>
+    <hr>
+
+    <section class="footer">
+        <h4>Suivez Nous</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum <br> dolorem eum praesentium facilis at vel quisquam incidunt illo tempora, eos consequuntur</p>
+        <div class="icons">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div>
+        <section class="container-fluid footer_section">
+            <p>
+              &copy; <span id="displayYear">2022</span> All Rights Reserved 
+            </p>
+          </section>
+    </section>
+
+
+    <script>
+        var menu = document.getElementById("nav-links");
+        function show(){
+            menu.style.display = "block";
+            setTimeout(function(){
+                menu.style.right = "0";
+            },0.1000);
+        }
+        function hide(){
+            menu.style.right = "-200px";
+            setTimeout(function(){
+                menu.style.display = "none";
+            },1000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitaka</title>
+    <!--Poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--Fichier css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/c123859339.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="header header2">
+        <!--barre de navigation-->
+        <nav>
+            <a href=""><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hide()"></i>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cart.html">Carte</a></li>
+                    <li><a href="apropos.html">A Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="show()"></i>
+        </nav>
+        <!--fin de barre de navigation-->
+
+        <!--première page-->
+        <div class="text-box">
+            <h1>Notre Menu</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Dolorem consequatur, temporibus vel sint praesentium magni.</p>
+            <a href="" class="bouton">Placez Une Commande</a>
+        </div>
+        <!--fin de la première page-->
+    </section>
+
+
+    <section class="food">
+        <h1>Placez Une Commande!</h1>
+        <div class="select">
+            <select name="" id="select1" onclick="test()">
+                <option value="" >Toutes les categories</option>
+                <option value="">Salades</option>
+                <option value="">Sushi</option>
+                <option value="">Plats</option>
+                <option value="">Boissons</option>
+              </select>
+        </div>
+        <!-- <h2 class="titreFiltre" id="sal">Salades</h2> -->
+        <div class="row">
+            <div class="menu-col salade">
+                <h3>Nom</h3>
+                <div class="hoba">
+                        <img class="image saladeimg" src="images/tania-melnyczuk-xeTv9N2FjXA-unsplash.jpg" alt="">
+                </div>
+                <span>30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="#menuPanier" class="bouton b1 b2 b3" onclick="salade1()">Ajouter au panier</a>
+            </div>
+            <div class="menu-col salade">
+                <h3>Nom</h3>
+                <div class="hoba">
+                    <img class="image saladeimg" src="images/tania-melnyczuk-xeTv9N2FjXA-unsplash.jpg" alt="">
+                </div>
+                <span>30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="#menuPanier" class="bouton b1 b2 b3" onclick="salade2()">Ajouter au panier</a>
+            </div>
+            <div class="menu-col salade">
+                <h3>Nom</h3>
+                <div class="hoba">
+                    <img class="image saladeimg" src="images/tania-melnyczuk-xeTv9N2FjXA-unsplash.jpg" alt="">
+                </div>
+                <span>30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="#menuPanier" class="bouton b1 b2 b3" onclick="salade3()">Ajouter au panier</a>
+            </div>
+            <div class="menu-col sushi">
+                <h3>Nom</h3>
+                <div class="hoba">
+                    <img class="image" src="images/marina-grynykha-hbcKVe0_Jg8-unsplash.jpg" alt="">
+                </div>
+                
+                <span id="prixPr">30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="" class="bouton b1 b2 b3">Ajouter au panier</a>
+            </div>
+            <div class="menu-col sushi">
+                <h3>Nom</h3>
+                <div class="hoba">
+                    <img class="image" src="images/marina-grynykha-hbcKVe0_Jg8-unsplash.jpg" alt="">
+                </div>
+                <span id="prixPr">30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="" class="bouton b1 b2 b3">Ajouter au panier</a>
+            </div>
+            <div class="menu-col sushi">
+                <h3>Nom</h3>
+                <div class="hoba">
+                    <img class="image" src="images/marina-grynykha-hbcKVe0_Jg8-unsplash.jpg" alt="">
+                </div>
+                <span id="prixPr">30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="" class="bouton b1 b2 b3">Ajouter au panier</a>
+            </div>
+            <div class="menu-col sushi">
+                <h3>Nom</h3>
+                <div class="hoba">
+                    <img class="image" src="images/marina-grynykha-hbcKVe0_Jg8-unsplash.jpg" alt="">
+                </div>
+                <span id="prixPr">30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="" class="bouton b1 b2 b3">Ajouter au panier</a>
+            </div>
+            <div class="menu-col sushi">
+                <h3>Nom</h3>
+                <div class="hoba">
+                    <img class="image" src="images/marina-grynykha-hbcKVe0_Jg8-unsplash.jpg" alt="">
+                </div>
+                <span id="prixPr">30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="" class="bouton b1 b2 b3">Ajouter au panier</a>
+            </div>
+            <div class="menu-col sushi">
+                <h3>Nom</h3>
+                <div class="hoba">
+                    <img class="image" src="images/marina-grynykha-hbcKVe0_Jg8-unsplash.jpg" alt="">
+                </div>
+                <span id="prixPr">30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="" class="bouton b1 b2 b3">Ajouter au panier</a>
+            </div>
+            <div class="menu-col plat">
+                <h3>Nom</h3>
+                <div class="hoba">
+                    <img class="image" src="images/rawkkim-_0WOD6dsiaU-unsplash.jpg" alt="">
+                </div>
+                <span id="prixPr">30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="" class="bouton b1 b2 b3">Ajouter au panier</a>
+            </div>
+            <div class="menu-col plat">
+                <h3>Nom</h3>
+                <div class="hoba">
+                    <img class="image" src="images/casey-lee-awj7sRviVXo-unsplash.jpg" alt="">
+
+                </div>
+                <span id="prixPr">30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="" class="bouton b1 b2 b3">Ajouter au panier</a>
+            </div>
+            <div class="menu-col plat">
+                <h3>Nom</h3>
+                <div class="hoba">
+
+                    <img class="image" src="images/jesse-ballantyne-_JOG2sjISWI-unsplash.jpg" alt="">
+                </div>
+                <span id="prixPr">30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="" class="bouton b1 b2 b3">Ajouter au panier</a>
+            </div>
+            <div class="menu-col soda">
+                <h3>Nom</h3>
+                <div class="hoba">
+
+                    <img class="image" src="images/olena-sergienko-ElfJDs4LAQk-unsplash.jpg" alt="">
+                </div>
+                <span id="prixPr">30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="#menuPanier" class="bouton b1 b2 b3" onclick="pepsi()">Ajouter au panier</a>
+            </div>
+            <div class="menu-col soda">
+                <h3>Nom</h3>
+                <div class="hoba">
+
+                    <img class="image" src="images/mahbod-akhzami-VM6uuMFPIGM-unsplash.jpg" alt="">
+                </div>
+                <span id="prixPr">30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="#menuPanier" class="bouton b1 b2 b3" onclick="coca()">Ajouter au panier</a>
+            </div>
+            <div class="menu-col soda">
+                <h3>Nom</h3>
+                <div class="hoba">
+                    <img class="image" src="images/sultan-abdulrazzaq-u2dxdpJsDcQ-unsplash.jpg" alt="">
+                </div>
+                <span id="prixPr">30MAD</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perspiciatis</p>
+                <a href="#menuPanier" class="bouton b1 b2 b3" onclick="sevenup()">Ajouter au panier</a>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="Panier">
+        <h1>Votre Panier</h1>
+        <div class="tab-panier" id="menuPanier">
+            <div class="rows">
+                <div class="colPan" id="colPanNom" style="width: 50%;">
+                    <h3>Nom</h3>
+                </div>
+                <div class="colPan" id="colPanQu" style="width: 20%;">
+                    <h3>Qu</h3>
+                </div>
+                <div class="colPan" id="colPanPrix" style="width: 30%;">
+                    <h3>Prix</h3>
+                </div>
+            </div>
+        </div>
+        <a href="" class="bouton b1 b4" onclick="total()">Calculer</a>
+    </section>
+    <hr>
+
+    <section class="footer">
+        <h4>Suivez Nous</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum <br> dolorem eum praesentium facilis at vel quisquam incidunt illo tempora, eos consequuntur</p>
+        <div class="icons">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div>
+        <section class="container-fluid footer_section">
+            <p>
+              &copy; 2022 All Rights Reserved 
+            </p>
+          </section>
+    </section>
+
+    <script src="javascript.js">
+    </script>
+</body>
+</html>

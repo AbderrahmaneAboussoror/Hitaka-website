@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitaka</title>
+    <!--Poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--Fichier css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/c123859339.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section class="header">
+        <!--barre de navigation-->
+        <nav>
+            <a href=""><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hide()"></i>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="cart.html">Carte</a></li>
+                    <li><a href="apropos.html">A Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="show()"></i>
+        </nav>
+        <!--fin de barre de navigation-->
+
+        <!--première page-->
+        <div class="text-box">
+            <h1>Introduction</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Dolorem consequatur, temporibus vel sint praesentium magni.</p>
+            <a href="apropos.html" class="bouton">Savoir Plus</a>
+        </div>
+        <!--fin de la première page-->
+    </section>
+
+    <!-- Deuxième page -->
+    <section class="plats">
+        <h1>Plats Fameux</h1>
+        <div class="row">
+            <div class="col">
+                <h3>Titre De Plat</h3>
+                <img src="images/farhad-ibrahimzade-ug4TZGjzFeY-unsplash.jpg" alt="">
+            </div>
+            <div class="col">
+                <h3>Titre De Plat</h3>
+                <img src="images/farhad-ibrahimzade-ug4TZGjzFeY-unsplash.jpg" alt="">
+            </div>
+            <div class="col">
+                <h3>Titre De Plat</h3>
+                <img src="images/farhad-ibrahimzade-ug4TZGjzFeY-unsplash.jpg" alt="">
+            </div>
+        </div>
+        <a href="carte.html" class="bouton b1">Commandez Mtn</a>
+    </section>
+    <hr>
+
+    <section class="about">
+        <h1>A Propos De Nous</h1>
+        <div class="about-section">
+            <div class="para">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ipsum dolor non? Consectetur ratione impedit maiores labore delectus porro quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequuntur officia odit magnam optio praesentium temporibus quidem saepe, doloremque quo non quam. Nihil consequatur inventore molestias impedit tenetur ex quam nam esse non, veritatis incidunt soluta maxime illum molestiae? Impedit porro consequuntur doloribus odio harum rerum pariatur molestiae tempora nulla!</p>                
+                <a href="apropos.html" class="bouton b1 b2">Savoir Plus</a>
+            </div>
+            <img src="images/thomas-marban-EHK-EH1SRzQ-unsplash.jpg" alt="">
+        </div>
+        
+    </section>
+
+    <hr>
+
+    <section class="footer">
+        <h4>Suivez Nous</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum <br> dolorem eum praesentium facilis at vel quisquam incidunt illo tempora, eos consequuntur</p>
+        <div class="icons">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div>
+        <section class="container-fluid footer_section">
+            <p>
+              &copy; <span id="displayYear">2022</span> All Rights Reserved 
+            </p>
+          </section>
+          
+    </section>
+
+    <script>
+        var menu = document.getElementById("nav-links");
+        function show(){
+            
+                menu.style.display = "block";
+                setTimeout(function(){
+                menu.style.right = "0";
+                },0.1000);
+        }
+        // if (window.matchMedia("(max-width: 700px)")){
+        //     function hide(){
+        //         menu.style.right = "-200px";
+        //         setTimeout(function(){
+        //             menu.style.display = "none";
+        //         },1000);
+        //     }
+        // }else{
+        //     menu.style.display = "block";
+        // }
+        function hide(){
+            menu.style.right = "-200px";
+            setTimeout(function(){
+                menu.style.display = "none";
+            },1000);
+        }
+    </script>
+</body>
+</html>
